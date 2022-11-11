@@ -26,7 +26,6 @@ jobs:
         with:
           node-version: 14
       - run: npm install  
-      - run: npm test 
       - run: npm run build 
       - uses: mr-smithers-excellent/docker-build-push@v5
         name: Build & push Docker image
